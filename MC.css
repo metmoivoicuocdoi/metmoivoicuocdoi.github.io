@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Muli";
+  user-select: none;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.month {
+  margin-top: 100px;
+  margin-left: 15px;
+}
+
+.monthname {
+  margin-left: 50px;
+}
+
+ul {
+  display: flex;
+  margin-top: 30px;
+}
+
+ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.alldaysdiv {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-template-rows: repeat(6, auto);
+  margin-left: 25px;
+  grid-gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dayEl {
+  display: flex;
+  background-color: #bbb;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: all 0.3s ease;
+}
+
+.set {
+  width: 100%;
+  height: 20vh;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.calp {
+  margin-top: 10px;
+}
+
+.selectmood {
+  margin-top: 20px;
+}
+.moodsec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.moodlec {
+    display: flex;
+    flex-direction: column;
+}
+.select {
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.one {
+    background-color:#2d6b5f;
+  transition: all 0.3s ease;
+}
+
+.two {
+    background-color: #72e3a6;
+  transition: all 0.3s ease;
+}
+
+.three {
+    background-color: #dff4c7;
+  transition: all 0.3s ease;
+}
+
+.four {
+    background-color: #edbf98;
+  transition: all 0.3s ease;
+}
+
+.five {
+  background-color: #ea3d36;
+  transition: all 0.3s ease;
+}
+
+.one.selected {
+  color: white;
+  background: #2d6b5f;
+  border-radius: 50%;
+}
+
+.two.selected {
+  color: white;
+  background: #72e3a6;
+  border-radius: 50%;
+}
+
+.three.selected {
+  color: white;
+  background: #dff4c7;
+  border-radius: 50%;
+}
+
+.four.selected {
+  color: white;
+  background: #edbf98;
+  border-radius: 50%;
+}
+
+.five.selected {
+  color: white;
+  background: #ea3d36;
+  border-radius: 50%;
+}
+
+.far {
+  pointer-events: none;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  float: right;
+}
+
+.randomize,
+.clear {
+  padding: 10px 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.randomize {
+  background: #72e3a6;
+}
+
+.clear {
+  margin-top: 10px;
+  background: #bbb;
+}
+
+@media screen and (max-width: 499px) {
+  .calendar {
+    width: 250px;
+    margin-left: 10px;
+    overflow: auto;
+  }
+
+  .monthname {
+    margin-left: 100px;
+  }
+}
